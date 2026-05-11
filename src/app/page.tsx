@@ -12,7 +12,7 @@ export default function Home() {
 
   const handleImageSelect = (file: File) => {
     setImage(file);
-    // Add a small delay for effect before switching occurs
+    // Add a small delay for effect before switching tabs occurs in app
     setTimeout(() => setMode("chat"), 800);
   };
 
