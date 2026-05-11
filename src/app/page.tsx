@@ -12,7 +12,7 @@ export default function Home() {
 
   const handleImageSelect = (file: File) => {
     setImage(file);
-    // Add a small delay for effect before switching
+    // Add a small delay for effect before switching occurs
     setTimeout(() => setMode("chat"), 800);
   };
 
