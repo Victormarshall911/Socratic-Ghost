@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 👻 Socratic Ghost — AI-Powered Socratic Tutoring & Document Inquiry Web App
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-16.x-black?logo=next.dot.js&logoColor=white)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.x-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![Vercel AI SDK](https://img.shields.io/badge/Vercel_AI_SDK-3.x-000000?logo=vercel&logoColor=white)](https://sdk.vercel.ai/)
+[![Google Gemini](https://img.shields.io/badge/Google_Gemini-AI_Models-4285F4?logo=google&logoColor=white)](https://ai.google.dev/)
 
-First, run the development server:
+**Socratic Ghost** is an advanced interactive educational web application built on **Next.js 16** and the **Vercel AI SDK**. Rather than providing direct answers, Socratic Ghost embodies the Socratic method—analyzing uploaded study documents and guiding learners toward deep critical understanding through structured, probing questions and intelligent hints.
 
+---
+
+## ✨ Key Features
+
+### 🧠 Socratic Inquiry Engine
+- **Vercel AI SDK & Google Gemini**: Leverages `@ai-sdk/google` and `@ai-sdk/react` (`useChat`, `useCompletion`) to engage students in dynamic pedagogical dialogues.
+- **Markdown & Interactive Formatting**: Render rich mathematical formulas, code blocks, and structured hints via `react-markdown`.
+
+### 📂 Document & Study Note Uploads
+- **Drag-and-Drop Ingestion**: Powered by `react-dropzone`, allowing instant drag-and-drop of lecture notes, PDFs, and essays for context-aware Socratic tutoring.
+
+---
+
+## 🛠️ Technology Stack
+
+| Layer | Framework / Library |
+| :--- | :--- |
+| **Framework & UI** | Next.js 16, React 19, Tailwind CSS v4, Framer Motion v12 |
+| **AI & LLM Integration** | Vercel AI SDK (`ai`, `@ai-sdk/react`), Google Gemini SDK |
+| **Components & Utility** | Radix UI, Class Variance Authority (`cva`), React Dropzone |
+
+---
+
+## 🚀 Getting Started Locally
+
+### Prerequisites
+- **Node.js**: v18+
+- **Google Gemini API Key**
+
+### 1. Install Dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd "Socratic Ghost"
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Environment Setup (`.env.local`)
+Create `.env.local`:
+```env
+GOOGLE_GENERATIVE_AI_API_KEY=your_gemini_api_key
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Start Next.js Dev Server
+```bash
+npm run dev
+```
+Open `http://localhost:3000`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Proprietary AI tutoring software. All rights reserved.
